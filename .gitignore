@@ -1,0 +1,23 @@
+# Ignore compiled Python bytecode files
+__pycache__/
+*.pyc
+
+# Ignore the virtual environment directory
+venv/
+
+# Ignore sensitive configuration files
+config.ini
+
+# Ignore log files
+*.log
+Save the .gitignore file in the root directory of your project.
+By including a .gitignore file, you ensure that certain files or directories are not tracked by Git, preventing them from being accidentally committed or shared with others.
+
+It's important to tailor the .gitignore file to your specific project's needs and the files that are not relevant to version control. There are also community-maintained templates available for different project types and programming languages that you can use as a starting point for your .gitignore file.
+
+# Ignore venv folder
+venv/
+
+
+
+
