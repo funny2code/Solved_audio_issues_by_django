@@ -3,13 +3,13 @@
 
 
 django files
--main/views.py
--main/templates/audio_test.html
+- main/views.py
+- main/templates/audio_test.html
 
 
 flask files
--app.py
--templates/index.html
+- app.py
+- templates/index.html
 
 
 
