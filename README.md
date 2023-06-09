@@ -16,7 +16,7 @@ templates/index.html
 
 
 
-To run flask - 
+**To run flask - **
 
 cd test
 
@@ -34,7 +34,7 @@ access url - http://127.0.0.1:5000/
 
 
 
-To run django -
+**To run django -**
 
 cd test
 
