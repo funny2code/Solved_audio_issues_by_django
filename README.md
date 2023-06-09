@@ -1,22 +1,21 @@
-# audio_test
+# Django audio does not work
 
 
 
-django (files to change)
-main/views.py
-main/templates/audio_test.html
+django files
+-main/views.py
+-main/templates/audio_test.html
 
 
-flask (files to refer to)
-app.py
-templates/index.html
-
-
+flask files
+-app.py
+-templates/index.html
 
 
 
 
-**To run flask - **
+**Run Flask**
+
 
 cd test
 
@@ -35,7 +34,7 @@ access url - http://127.0.0.1:5000/
 
 
 
-**To run django -**
+**Run Django**
 
 cd test
 
