@@ -1,6 +1,8 @@
 {% load static %}
 
+
 <!-- templates/index.html -->
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,7 +18,6 @@
 </head>
 <body>
 <div class="container">
-
     <b>Django Testing</b>
     <br>{{audio_file}}</br>
     <audio id="audio" controls style="width: 100%;">
@@ -33,9 +34,19 @@
     <button class="btn btn-primary" onclick="audio.playbackRate = 1.0;">1.0x Speed</button>
     <button class="btn btn-primary" onclick="audio.playbackRate = 1.5;">1.5x Speed</button>
     <button class="btn btn-primary" onclick="audio.playbackRate = 2.0;">2.0x Speed</button>
-    <button class="btn btn-danger" onclick="audio.currentTime += 10;">Forward 10 Seconds</button>
+    <button type="button" onclick="javascript:; audio.currentTime += 10;">ff</button>
+    <button class="btn btn-danger" onclick="forward();">Forward 10 Seconds</button>
     <button class="btn btn-danger" onclick="audio.currentTime -= 10;">Backward 10 Seconds</button>
-
+<script>
+        var audi_ele = document.getElementById("audio");
+        console.log("audio ele: ", audi_ele);
+        function forward() {
+                
+                console.log(audi_ele.currentTime);
+                audi_ele.currentTime += 10;
+                console.log("after: ", audi_ele.currentTime);
+        }
+</script>
     <br><br>
     <a class="btn btn-secondary" href="{% url 'choose_audio' %}">Go to Main page</a>
 
@@ -43,9 +54,10 @@
 </div>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi94NM"
-        crossorigin="anonymous"></script>
+<script
+  src="https://code.jquery.com/jquery-3.7.0.min.js"
+  integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+  crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
